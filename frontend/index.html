@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacientes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Cadastro de Pacientes</h1>
+
+    <form id="patient-form">
+      <input type="hidden" id="patient-id" />
+      <div class="field">
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Nome completo" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email@exemplo.com" required />
+      </div>
+      <div class="actions">
+        <button type="submit" id="submit-btn">Salvar</button>
+        <button type="button" id="cancel-btn" class="secondary" hidden>Cancelar</button>
+      </div>
+    </form>
+
+    <table id="patients-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="patients-body"></tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
