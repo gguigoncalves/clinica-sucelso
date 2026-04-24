@@ -1,4 +1,4 @@
-const API = 'https://clinica-backend-three.vercel.app/api/patients' 
+const API = '/api/patients' 
 
 const form = document.getElementById('patient-form')
 const nameInput = document.getElementById('name')
