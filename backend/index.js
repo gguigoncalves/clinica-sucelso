@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const patientRoutes = require('./routes/patientRoutes')
+const patientRoutes = require('./src/routes/patientRoutes')
 
 const app = express()
 
@@ -11,7 +11,7 @@ app.use('/api/patients', patientRoutes)
 
 app.get('/', (req, res) => res.json({ status: 'API rodando' }))
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 2377
 app.listen(PORT, () => console.log(`Servidor na porta ${PORT}`))
 
 module.exports = app

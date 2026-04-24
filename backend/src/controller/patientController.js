@@ -1,4 +1,4 @@
-const Patient = require('../models/patientModel')
+const Patient = require('../model/patientModel')
 
 async function index(req, res) {
   try {

@@ -1,4 +1,4 @@
-const API = 'https://sua-api.vercel.app/api/patients' // troque pela URL do deploy
+const API = 'https://clinica-sucelso.vercel.app/' // troque pela URL do deploy
 
 const form = document.getElementById('patient-form')
 const nameInput = document.getElementById('name')
